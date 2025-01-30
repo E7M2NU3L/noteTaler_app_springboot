@@ -31,7 +31,7 @@
     </style>
 </head>
 <body>
-    <nav class="navbar bg-body-tertiary">
+    <nav class="navbar bg-body-tertiary" style="min-height: 10vh;">
         <div class="container-fluid d-flex justify-content-between px-2 align-items-center flex-row">
           <a class="navbar-brand" href="#">
             <img th:src="@{/logo.jpg}" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
@@ -75,7 +75,7 @@
         </div>
     </div>
 
-    <main class="container my-4">
+    <main class="container my-4" style="min-height: 74vh;">
         <div class="row gap-2">
             <th:block th:each="note: ${notes}" class="col-sm-1 col-md-2 col-lg-3">
                 <div class="card" style="width: 18rem;">
@@ -168,17 +168,35 @@
         </div>
     </main>
 
-    <footer class="container bg-tertiary">
+    <footer class="container bg-tertiary" style="min-height: 10vh;">
         <div class="container-fluid d-flex justify-content-between px-2 align-items-center flex-row">
-            <a class="navbar-brand" href="#">
-              <img th:src="@{/logo.jpg}" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-              Notrex
-            </a>
+            <main>
+                <a class="navbar-brand d-flex flex-row gap-2" href="#">
+                    <img th:src="@{/logo.jpg}" alt="Logo" width="40" height="34" class="d-inline-block align-text-top">
+                    <h1 class="fs-5">Notrex</h1>
+                  </a>
+      
+                  <p>All rights reserved</p>
+            </main>
   
-            <main class="d-flex flex-col align-items-start justify-content-start">
+            <main class="d-flex flex-column align-items-start justify-content-start">
                 <h6>Author: Emmanuel A</h6>
-                <main class="flex flex-row gap-2 align-items-center">
-                    <a href=""
+                <main class="flex flex-row align-items-center">
+                    <a href="https://github.com/E7M2NU3L/noteTaler_app_springboot.git" target="_blank" class="px-1 fs-6 text-dark">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/emmanuel-a-1bb23b24b/" target="_blank" class="px-1 fs-6 text-dark">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+
+                    <a href="https://worlddelaemmanuel.vercel.app/" target="_blank" class="px-1 fs-6 text-dark">
+                        <i class="fa-solid fa-user"></i>
+                    </a>
+
+                    <a href="https://www.behance.net/emmanuela8" target="_blank" class="px-1 fs-6 text-dark">
+                        <i class="fa-brands fa-square-behance"></i>
+                    </a>
                 </main>
             </main>
           </div>
